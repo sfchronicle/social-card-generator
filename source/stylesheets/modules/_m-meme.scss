@@ -1,0 +1,28 @@
+$m: '.m-meme';
+
+body {
+  margin: 0;
+  padding: 0 20px;
+}
+
+#{$m} {
+  width: 38%;
+  position: absolute;
+  top:50px;
+  right: 20px;
+
+  @media (max-width:890px){
+    position:static;
+    width:100%;
+  }
+
+  // Mini-clearfix:
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

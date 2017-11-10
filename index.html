@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Social Card Generator</title>
+    <link rel="stylesheet" href="dist/styles.css" />
+    <meta name="robots" content="noindex, nofollow">
+  </head>
+  <body class="meme">
+
+    <div class="content">
+
+      <div class="m-canvas" id="meme-canvas-view">
+        <h1>Social Card Generator</h1>
+        <div class="m-canvas__canvas" id="meme-canvas">
+          <noscript>Sorry, this tool requires a canvas-enabled browser. Try Google Chrome.</noscript>
+        </div>
+        <p class="m-canvas__download">
+          <a href="#" download="share.png" id="meme-download">Download Image</a>
+        </p>
+      </div>
+
+      <div class="m-meme">
+        <form class="m-editor" id="meme-editor-view">
+
+          <h2><label for="image-size">Social network</label></h2>
+          <select id="image-size"></select>
+
+          <div class="dropzone" id="dropzone">Drop Image Here</div>
+
+          <h2><label for="image-scale">Resize image</label></h2>
+          <input id="image-scale" type="range" max="4" min=".01" step=".01" value="1">
+          
+          <h2><label for="overlay-alpha">Image Opacity</label></h2>
+          <input id="overlay-alpha" type="range" max="1" min=".01" step=".01" value="1">
+
+          <div class="m-editor__backgroundcolor" id="background-color">
+            <h2>Background Color</h2>
+            <ul class="checkbox-group">
+              <li><label><input type="radio" name="background-color" value=""> None </label></li>
+            </ul>
+          </div>
+
+          <h2><label for="headline">Headline</label></h2>
+          <textarea id="headline" name="headline" type="text" value=""></textarea>
+
+          <h2><label for="headline-width">Headline Width</label></h2>
+            <input id="headline-width" type="range" max="1" min="0.01" step=".01" value="0.75">
+
+          <h2>Text Alignment</h2>
+          <select class="text-align" id="text-align">
+            <option value="" disabled>Select alignment</option>
+          </select>
+
+          <h2>Font Size</h2>
+          <select class="font-size" for="font-size">
+            <input id="font-size" type="range" max="84" min="21" step=".1" value="24">
+          </select>
+
+          <h2>Font Style</h2>
+          <select class="font-family" id="font-family">
+            <option value="" disabled>Select a font</option>
+          </select>
+
+          <h2>Font Color</h2>
+          <div class="m-editor__font-color" id="font-color">
+            <ul class="checkbox-group"></ul>
+          </div>
+
+          <div class="checkbox-group text-shadow">
+            <input id="text-shadow" name="shadow" type="checkbox">
+            <label for="text-shadow">Text Shadow</label>
+          </div>
+
+          <h2>Watermark</h2>
+          <select class="watermark" id="watermark">
+            <option value="" disabled>Select a watermark</option>
+          </select>
+
+          <h2><label for="credit">Credit Name</label></h2>
+          <input id="credit" name="credit" type="text" value="">
+
+          <h2><label for="credit-title">Credit Title</label></h2>
+          <input id="credit-title" name="credit-title" type="text" value="">
+
+        </form>
+      </div>
+
+    </div>
+
+    <script src="dist/scripts.js"></script>
+  </body>
+</html>
