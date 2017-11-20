@@ -98,9 +98,11 @@ MEME.MemeCanvasView = Backbone.View.extend({
       } else if (d.textAlign == 'right' ) {
         ctx.textAlign = 'right';
         x = d.width - padding;
+        // y = d.height / 5;
 
       } else {
         ctx.textAlign = 'left';
+        y = d.height / 5;
       }
 
       var words = d.headlineText.split(' ');
@@ -137,7 +139,7 @@ MEME.MemeCanvasView = Backbone.View.extend({
         ctx.shadowBlur = 10;
       }
 
-      ctx.fillText(d.creditText.toUpperCase(), padding, d.height - padding - 30);
+      ctx.fillText(d.creditText.toUpperCase(), padding, d.height - padding - d.creditSpacing);
     }
 
     function renderCreditTitle(ctx) {

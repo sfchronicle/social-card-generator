@@ -3,6 +3,7 @@ $m: '.m-canvas';
 #{$m} {
   width:40%;
   position:fixed;
+  max-width:550px;
 
   &.small{
     width:35%;

@@ -27,6 +27,7 @@ module.exports = function(grunt) {
             'source/javascripts/views/meme-editor.js',
             'source/javascripts/helpers/font-monitor.js',
             'source/javascripts/settings.js'
+
           ]
         }
       }

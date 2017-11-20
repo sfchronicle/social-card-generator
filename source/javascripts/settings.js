@@ -2,6 +2,7 @@ var MEME_SETTINGS = {
   creditText: 'Person Name ', // Default "credits" text.
   creditSize: 18, // Font size for credit text.
   creditTitleSize: 16,
+  creditSpacing: 30,
   creditTitle: 'The Chronicle',
   creditFont: 'AntennaRegular',
   creditTitleFont: 'AntennaExtraLight',
@@ -33,7 +34,8 @@ var MEME_SETTINGS = {
   headlineWidth: 0.75,
 
   headlineText: '“Write your own headline.”', // Default headline text.
-  height: 756, // Canvas rendering height.
+  height: 756, // Canvas rendering height
+  width: 1510, // Canvas rendering width.
   imageScale: 1, // Background image scale.
   imageSrc: '', // Default background image path. MUST reside on host domain, or use base64 data.
   overlayAlpha: 1, // Opacity of image overlay.
@@ -41,15 +43,15 @@ var MEME_SETTINGS = {
   // Background color, or blank ('') for no overlay. Takes precedent over overlay.
   backgroundColor: '#000',
   // Background color options: set to empty array to disable overlay options selector.
-  backgroundColorOpts: ['#000', '#777', '#2980b9'],
+  backgroundColorOpts: ['#000', '#777', '#3985A2', '#56C165'],
   
-  paddingRatio: 0.055, // Percentage of canvas width to use as edge padding.
+  paddingRatio: 0.05, // Percentage of canvas width to use as edge padding.
 
   // Size options: these are some sane defaults for the three social networks.
   sizeOpts: [{
     label: 'Twitter',
     width: 1510,
-    height: 756
+    height: 756,
   }, {
     label: 'Facebook',
     width: 1410,
@@ -85,7 +87,5 @@ var MEME_SETTINGS = {
     {text: 'SFC - white', value: 'source/images/sfc_logo_white.png', data: ''},
     {text: 'Greenstate - white', value: 'source/images/greenstate_white.png', data: ''},
     {text: 'Greenstate - black', value: 'source/images/greenstate_black.png', data: ''}
-  ],
-
-  width: 1510 // Canvas rendering width.
+  ]
 };
