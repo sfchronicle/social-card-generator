@@ -23,7 +23,12 @@
       </div>
 
       <div class="m-meme">
+
         <form class="m-editor" id="meme-editor-view">
+
+          <div class="notes">
+            For best results please use <strong>Google Chrome</strong>. Firefox may work, IE probably won't.
+          </div>
 
           <h2><label for="image-size">Social network</label></h2>
           <select id="image-size"></select>
@@ -34,7 +39,7 @@
           <input id="image-scale" type="range" max="4" min=".01" step=".01" value="1">
           
           <h2><label for="overlay-alpha">Image Opacity</label></h2>
-          <input id="overlay-alpha" type="range" max="1" min=".01" step=".01" value="1">
+          <input id="overlay-alpha" type="range" max="1" min="0" step=".1" value="1">
 
           <div class="m-editor__backgroundcolor" id="background-color">
             <h2>Background Color</h2>

@@ -115,7 +115,7 @@ MEME.MemeEditorView = Backbone.View.extend({
     'change [name="background-color"]': "onBackgroundColor",
     'dragover #dropzone': 'onZoneOver',
     'dragleave #dropzone': 'onZoneOut',
-    "change #overlay-alpha": "onOverlayAlpha",
+    'change #overlay-alpha': 'onOverlayAlpha',
     'drop #dropzone': 'onZoneDrop'
   },
 

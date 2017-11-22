@@ -1,8 +1,8 @@
 var MEME_SETTINGS = {
   creditText: 'Person Name ', // Default "credits" text.
-  creditSize: 18, // Font size for credit text.
-  creditTitleSize: 16,
-  creditSpacing: 30,
+  creditSize: 14, // Font size for credit text.
+  creditTitleSize: 12,
+  creditSpacing: 20,
   creditTitle: 'The Chronicle',
   creditFont: 'AntennaRegular',
   creditTitleFont: 'AntennaExtraLight',
@@ -26,7 +26,7 @@ var MEME_SETTINGS = {
   }],
 
   // Font size of main headline:
-  fontSize: 48,
+  fontSize: 30,
   // Font color options
   fontColor: '#fff',
   fontColorOpts: ['#fff', '#333', '#000'],
@@ -34,9 +34,9 @@ var MEME_SETTINGS = {
   headlineWidth: 0.75,
 
   headlineText: '“Write your own headline.”', // Default headline text.
-  height: 756, // Canvas rendering height
-  width: 1510, // Canvas rendering width.
-  imageScale: 1, // Background image scale.
+  height: 506, // Canvas rendering height
+  width: 1024, // Canvas rendering width.
+  imageScale: 1, // Background image scale if image larger than 1024px wide.
   imageSrc: '', // Default background image path. MUST reside on host domain, or use base64 data.
   overlayAlpha: 1, // Opacity of image overlay.
 
@@ -50,16 +50,16 @@ var MEME_SETTINGS = {
   // Size options: these are some sane defaults for the three social networks.
   sizeOpts: [{
     label: 'Twitter',
-    width: 1510,
-    height: 756,
+    width: 1024,
+    height: 506,
   }, {
     label: 'Facebook',
-    width: 1410,
-    height: 738
+    width: 1024,
+    height: 536
   }, {
     label: 'Instagram',
-    width: 1200,
-    height: 1200
+    width: 1024,
+    height: 1024
   }],
 
   // Text alignment: valid settings are "left", "center", and "right".
