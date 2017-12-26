@@ -58,8 +58,8 @@ var MEME_SETTINGS = {
     height: 536
   }, {
     label: 'Instagram',
-    width: 1024,
-    height: 1024
+    width: 900,
+    height: 900
   }],
 
   // Text alignment: valid settings are "left", "center", and "right".
