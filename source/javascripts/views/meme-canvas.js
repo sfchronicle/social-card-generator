@@ -127,9 +127,10 @@ MEME.MemeCanvasView = Backbone.View.extend({
 
     function renderCredit(ctx) {
       ctx.textBaseline = 'bottom';
-      ctx.textAlign = 'left';
       ctx.fillStyle = d.fontColor;
       ctx.font = 'normal '+ d.creditSize +'pt '+ d.creditFont;
+      var x = padding;
+      var y = d.height /1.2;
 
       // Text shadow:
       if (d.textShadow) {
@@ -139,14 +140,29 @@ MEME.MemeCanvasView = Backbone.View.extend({
         ctx.shadowBlur = 10;
       }
 
-      ctx.fillText(d.creditText.toUpperCase(), padding, d.height - padding - d.creditSpacing);
+      // Credit alignment:
+      console.log(ctx.textAlign);
+      if (d.creditAlign == 'center') {
+        ctx.textAlign = 'center';
+        x = d.width / 2;
+
+      } else if (d.creditAlign == 'right' ) {
+        ctx.textAlign = 'right';
+        x = d.width - padding;
+
+      } else {
+        ctx.textAlign = 'left';
+      }
+
+      ctx.fillText(d.creditText.toUpperCase(), x,y);
     }
 
     function renderCreditTitle(ctx) {
       ctx.textBaseline = 'bottom';
-      ctx.textAlign = 'left';
       ctx.fillStyle = d.fontColor;
       ctx.font = 'normal '+ d.creditTitleSize +'pt '+ d.creditTitleFont;
+      var x = padding;
+      var y = d.height /1.13;
 
       // Text shadow:
       if (d.textShadow) {
@@ -156,7 +172,20 @@ MEME.MemeCanvasView = Backbone.View.extend({
         ctx.shadowBlur = 10;
       }
 
-      ctx.fillText(d.creditTitle, padding, d.height - padding);
+      // Credit alignment:
+      if (d.creditAlign == 'center') {
+        ctx.textAlign = 'center';
+        x = d.width / 2;
+
+      } else if (d.creditAlign == 'right') {
+        ctx.textAlign = 'right';
+        x = d.width - padding;
+
+      } else {
+        ctx.textAlign = 'left';
+      }
+
+      ctx.fillText(d.creditTitle, x,y);
     }
 
     function renderWatermark(ctx) {
@@ -175,8 +204,15 @@ MEME.MemeCanvasView = Backbone.View.extend({
           tw = mw;
         }
 
+        var x = d.width-padding-tw;
+        var y = d.height-padding-th;
+
+        if(d.creditAlign == 'right'){
+          x = padding
+        }
+
         ctx.globalAlpha = d.watermarkAlpha;
-        ctx.drawImage(m.watermark, 0, 0, bw, bh, d.width-padding-tw, d.height-padding-th, tw, th);
+        ctx.drawImage(m.watermark, 0, 0, bw, bh, x, y, tw, th);
         ctx.globalAlpha = 1;
         ctx.restore();
       }

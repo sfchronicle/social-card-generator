@@ -42,6 +42,11 @@ MEME.MemeEditorView = Backbone.View.extend({
       $('#text-align').append(buildOptions(d.textAlignOpts)).show();
     }
 
+    // Build credit alignment options:
+    if (d.creditAlignOpts && d.creditAlignOpts.length) {
+      $('#credit-align').append(buildOptions(d.creditAlignOpts)).show();
+    }
+
     // Build font family options:
     if (d.fontFamilyOpts && d.fontFamilyOpts.length) {
       $('#font-family').append(buildOptions(d.fontFamilyOpts)).show();
@@ -93,6 +98,7 @@ MEME.MemeEditorView = Backbone.View.extend({
     this.$('#headline-width').val(d.headlineWidth);
     this.$('#font-family').val(d.fontFamily);
     this.$('#text-align').val(d.textAlign);
+    this.$('#credit-align').val(d.creditAlign);
     this.$('#text-shadow').prop('checked', d.textShadow);
     this.$('#font-color').find('[value="'+d.fontColor+'"]').prop('checked', true);
     this.$("#overlay-alpha").val(d.overlayAlpha);
@@ -111,6 +117,7 @@ MEME.MemeEditorView = Backbone.View.extend({
     'change [name="font-color"]': 'onFontColor',
     'change #watermark': 'onWatermark',
     'change #text-align': 'onTextAlign',
+    'change #credit-align': 'onCreditAlign',
     'change #text-shadow': 'onTextShadow',
     'change [name="background-color"]': "onBackgroundColor",
     'dragover #dropzone': 'onZoneOver',
@@ -133,6 +140,10 @@ MEME.MemeEditorView = Backbone.View.extend({
 
   onTextAlign: function() {
     this.model.set('textAlign', this.$('#text-align').val());
+  },
+
+  onCreditAlign: function() {
+    this.model.set('creditAlign', this.$('#credit-align').val());
   },
 
   onTextShadow: function() {

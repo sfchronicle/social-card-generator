@@ -71,6 +71,15 @@ var MEME_SETTINGS = {
     {text: 'Align right', value: 'right'}
   ],
 
+  // Credit alignment: valid settings are "left", "center", and "right".
+  creditAlign: 'left',
+  // Credit alignment options: set to empty array to disable alignment picker.
+  creditAlignOpts: [
+    {text: 'Align left', value: 'left'},
+    {text: 'Align center', value: 'center'},
+    {text: 'Align right', value: 'right'}
+  ],
+
   textShadow: false, // Text shadow toggle.
   textShadowEdit: true, // Toggles text shadow control within the editor.
   watermarkAlpha: 1, // Opacity of watermark image.
