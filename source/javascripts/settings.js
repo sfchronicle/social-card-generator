@@ -94,8 +94,6 @@ var MEME_SETTINGS = {
   watermarkOpts: [
     {text: 'SFC - black', value: 'source/images/sfc_logo_black.png', data: ''},
     {text: 'SFC - white', value: 'source/images/sfc_logo_white.png', data: ''},
-    {text: 'Greenstate - white', value: 'source/images/greenstate_white.png', data: ''},
-    {text: 'Greenstate - black', value: 'source/images/greenstate_black.png', data: ''},
     {text: 'The Press - white', value: 'source/images/the_press_white.png', data: ''},
     {text: 'The Press - black', value: 'source/images/the_press_black.png', data: ''}
   ]
