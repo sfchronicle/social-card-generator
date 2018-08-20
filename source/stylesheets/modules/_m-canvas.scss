@@ -1,9 +1,12 @@
 $m: '.m-canvas';
 
 #{$m} {
-  width:40%;
+  width:100%;
   position:fixed;
   max-width:550px;
+  top:0;
+  overflow:scroll;
+  height:100%;
 
   &.small{
     width:35%;

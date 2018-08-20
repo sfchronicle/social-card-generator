@@ -80,6 +80,8 @@ MEME.MemeCanvasView = Backbone.View.extend({
       ctx.fillStyle = d.fontColor;
       ctx.textBaseline = 'top';
 
+      console.log('FONT', ctx.font);
+
       // Text shadow:
       if (d.textShadow) {
         ctx.shadowColor = "#666";

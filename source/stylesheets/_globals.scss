@@ -9,7 +9,7 @@ body {
   background-color: #fff;
   color: $default-text-color;
   display: table;
-  font-family: 'Open Sans';
+  font-family: $sans-serif;
   font-size: percentage($default-font-size/16px);
   height: 100%;
   line-height: $default-line-height;
@@ -19,12 +19,20 @@ body {
   width: 100%;
 }
 
+h1{
+  font-family:$sans-serif-bold;
+}
+
+h2{
+  font-family:$sans-serif-bold;
+}
+
 body.noselect {
   @include user-select(none);
 }
 
 .content {
-  max-width:900px;
+  max-width:1100px;
   margin: 0 auto;
   position:relative;
 }

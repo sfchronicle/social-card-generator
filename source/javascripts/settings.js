@@ -4,25 +4,25 @@ var MEME_SETTINGS = {
   creditTitleSize: 12,
   creditSpacing: 20,
   creditTitle: 'The Chronicle',
-  creditFont: 'AntennaRegular',
-  creditTitleFont: 'AntennaExtraLight',
+  creditFont: '"SourceSansPro700"',
+  creditTitleFont: '"SourceSansPro"',
 
   downloadName: 'share', // The name of the downloaded image file (will have a ".png" extension added).
 
   // Universal font family for texts:
   // Note that you'll need to included quoted font names as you would in CSS, ie: '"Knockout 28 B"'.
-  fontFamily: 'FarnhamDisplayLight',
+  fontFamily: 'Lora',
   // Font family options: set to empty array to disable font selector.
   // These options may also be formatted as {text:'Knockout', value:'"Knockout 28 B"'}.
   fontFamilyOpts: [{
     text: 'Serif - SFC',
-    value: 'FarnhamDisplayLight'
-  }, {
-    text: 'Sans-serif bold - SFC',
-    value: 'AntennaRegular'
+    value: 'Lora'
   }, {
     text: 'Sans-serif - SFC',
-    value: 'AntennaExtraLight'
+    value: 'SourceSansPro'
+  }, {
+    text: 'Sans-serif bold - SFC',
+    value: 'SourceSansPro700'
   }],
 
   // Font size of main headline:
@@ -43,7 +43,7 @@ var MEME_SETTINGS = {
   // Background color, or blank ('') for no overlay. Takes precedent over overlay.
   backgroundColor: '#000',
   // Background color options: set to empty array to disable overlay options selector.
-  backgroundColorOpts: ['#000', '#777', '#3985A2', '#56C165'],
+  backgroundColorOpts: ['#000', '#777', '#3985A2'],
   
   paddingRatio: 0.05, // Percentage of canvas width to use as edge padding.
 
@@ -57,10 +57,16 @@ var MEME_SETTINGS = {
     width: 1024,
     height: 536
   }, {
-    label: 'Instagram',
+    label: 'Instagram Post',
     width: 900,
     height: 900
-  }],
+  }
+  // , {
+  //   label: 'Instagram Story',
+  //   width: 506,
+  //   height: 900
+  // }
+  ],
 
   // Text alignment: valid settings are "left", "center", and "right".
   textAlign: 'left',

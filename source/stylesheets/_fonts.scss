@@ -1,83 +1,31 @@
 @font-face{
-  font-family:"AntennaRegular";
-  font-style: normal;
+  font-family:"Lora";
   font-weight: normal;
-
-  src:url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/regular/antennaregular.eot");
-
-  src:url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/regular/antennaregular.eot?") format("embedded-opentype"),
-      url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/regular/antennaregular.woff") format("woff"),
-      url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/regular/antennaregular.ttf") format("truetype");
-}
-
-@font-face{
-  font-family:"AntennaExtraLight";
   font-style: normal;
-  font-weight: normal;
-
-  src:url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/extralight/antennaextralight.eot");
-
-  src:url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/extralight/antennaextralight.eot?") format("embedded-opentype"),
-      url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/extralight/antennaextralight.woff") format("woff"),
-      url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/extralight/antennaextralight.ttf") format("truetype");
+  src:url("https://www.sfchronicle.com/css/ferd/hdn/fonts/lora/lora-v12-latin-regular.woff2");
 }
 
 @font-face{
-  font-family:"AntennaMedium";
+  font-family:"SourceSansPro";
+  font-weight: normal;
   font-style: normal;
-  font-weight: normal;
-
-  src:url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/2908d944-93cf-4073-8ab6-ff417bc9759a-2.eot");
-
-  src:url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/2908d944-93cf-4073-8ab6-ff417bc9759a-2.eot?") format("embedded-opentype"),
-      url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/2908d944-93cf-4073-8ab6-ff417bc9759a-3.woff") format("woff"),
-      url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/2908d944-93cf-4073-8ab6-ff417bc9759a-1.ttf") format("truetype");
+  src:url("https://www.sfchronicle.com/css/ferd/hdn/fonts/sourcesans/source-sans-pro-v11-latin-regular.woff2");
 }
-
 @font-face{
-  font-family:"AntennaBold";
-  font-style:normal;
-  font-weight:bold;
-
-  src:url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/b9884997-4bb8-4ffa-ac3c-a2d5598fb1b2-2.eot");
-  src:url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/b9884997-4bb8-4ffa-ac3c-a2d5598fb1b2-2.eot?") format("embedded-opentype"),
-      url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/b9884997-4bb8-4ffa-ac3c-a2d5598fb1b2-3.woff") format("woff"),
-      url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/antenna/b9884997-4bb8-4ffa-ac3c-a2d5598fb1b2-1.ttf") format("truetype");
-}
-
-@font-face{
-  font-family:"FarnhamText";
+  font-family:"SourceSansPro300";
+  font-weight: 300;
   font-style: normal;
-  font-weight: normal;
-
-  src:url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/farnhamtext/ed626233-1ce5-4089-9d5b-9059102dadf9-2.eot");
-
-  src:url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/farnhamtext/ed626233-1ce5-4089-9d5b-9059102dadf9-2.eot?") format("embedded-opentype"),
-      url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/farnhamtext/ed626233-1ce5-4089-9d5b-9059102dadf9-3.woff") format("woff"),
-      url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/farnhamtext/ed626233-1ce5-4089-9d5b-9059102dadf9-1.ttf") format("truetype");
+  src:url("https://www.sfchronicle.com/css/ferd/hdn/fonts/sourcesans/source-sans-pro-v11-latin-300.woff2");
 }
-
 @font-face{
-    font-family: "FarnhamTextBold";
-    font-style: normal;
-    font-weight: bold;
-
-    src:url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/farnhamtext/ed9e2917-f97e-4f03-b699-813967a6c002-2.eot");
-
-    src:url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/farnhamtext/ed9e2917-f97e-4f03-b699-813967a6c002-2.eot") format("embedded-opentype"),
-        url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/farnhamtext/ed9e2917-f97e-4f03-b699-813967a6c002-3.woff") format("woff"),
-        url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/farnhamtext/ed9e2917-f97e-4f03-b699-813967a6c002-1.ttf") format("truetype");
-}
-
-
-@font-face{
-  font-family:"FarnhamDisplayLight";
+  font-family:"SourceSansPro600";
+  font-weight: 600;
   font-style: normal;
-  font-weight: normal;
-
-  src:url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/farnhamtext/display_light/farnhamdisplay-light.eot");
-
-  src:url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/farnhamtext/display_light/farnhamdisplay-light.eot") format("embedded-opentype"),
-      url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/farnhamtext/display_light/farnhamdisplay-light.woff") format("woff"),
-      url("https://s3-us-west-1.amazonaws.com/projects.sfchronicle.com/shared/fonts/farnhamtext/display_light/farnhamdisplay-light.ttf") format("truetype");
+  src:url("https://www.sfchronicle.com/css/ferd/hdn/fonts/sourcesans/source-sans-pro-v11-latin-600.woff2");
+}
+@font-face{
+  font-family:"SourceSansPro700";
+  font-weight: 700;
+  font-style: normal;
+  src:url("https://www.sfchronicle.com/css/ferd/hdn/fonts/sourcesans/source-sans-pro-v11-latin-700.woff2");
 }
