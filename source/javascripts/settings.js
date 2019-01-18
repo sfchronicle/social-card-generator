@@ -27,6 +27,7 @@ var MEME_SETTINGS = {
 
   // Font size of main headline:
   fontSize: 30,
+  lineHeight:1.2,
   // Font color options
   fontColor: '#fff',
   fontColorOpts: ['#fff', '#333', '#000'],

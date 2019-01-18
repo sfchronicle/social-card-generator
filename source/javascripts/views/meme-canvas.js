@@ -118,7 +118,8 @@ MEME.MemeCanvasView = Backbone.View.extend({
         if (testWidth > maxWidth && n > 0) {
           ctx.fillText(line, x, y);
           line = words[n] + ' ';
-          y += Math.round(d.fontSize * 1.5);
+          // this controls the line height
+          y += Math.round(d.fontSize * 1.65);
         } else {
           line = testLine;
         }
